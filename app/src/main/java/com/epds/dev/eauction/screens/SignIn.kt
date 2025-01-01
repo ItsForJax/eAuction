@@ -36,21 +36,13 @@ import androidx.core.view.WindowInsetsCompat
 
 @Composable
 fun SignIn() {
-    val insets = WindowInsetsCompat.toWindowInsetsCompat(LocalView.current.rootWindowInsets)
     Column(
         Modifier
-            .background(Brush.linearGradient(colors = listOf(Color(0xFF2C2B2B), Color.Black)))
-
-            .padding(
-                top = with(LocalDensity.current) {
-                    insets.getInsets(WindowInsetsCompat.Type.statusBars()).top.toDp()
-                },
-            )
-            .padding(horizontal = 24.dp)
             .fillMaxSize()
     ) {
         Column(
             modifier = Modifier
+                .padding(horizontal = 24.dp)
                 .weight(11f)
                 .fillMaxSize()
         ) {
@@ -76,6 +68,7 @@ fun SignIn() {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
+                .padding(horizontal = 24.dp)
                 .weight(4f)
                 .fillMaxSize()
         ) {
