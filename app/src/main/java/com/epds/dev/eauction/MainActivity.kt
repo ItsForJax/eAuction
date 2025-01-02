@@ -21,6 +21,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import com.epds.dev.eauction.screens.AddAuction1
 import com.epds.dev.eauction.screens.Homepage
 import com.epds.dev.eauction.screens.SignIn
 import com.epds.dev.eauction.ui.theme.EAuctionTheme
@@ -46,7 +47,9 @@ class MainActivity : ComponentActivity() {
                         .fillMaxSize()
                 ) {
 //                    SignIn()
-                    Homepage()
+//                    Homepage()
+                    AddAuction1()
+
                 }
 
             }
